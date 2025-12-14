@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 class="heading">
+                Job Application Form
+            </h1>
+        
+            <form autocomplete="off" action="#" method="get">
+
+                <div class="form-container">
+
+                <!-- full name  -->
+                    <div class="form-row">
+                        <label for="fname">Full name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+                    </div>
+
+                <!-- last name  -->
+                    <div class="form-row">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                    </div>
+                
+
+                <!-- EMail  -->
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+
+
+                <!-- job role -->
+                    <div class="form-row">
+                        <label for="jobrole">Job role</label>
+                        <select name="jobrole" id="jobrole">
+                            <option value="">Select job role</option>
+                            <option value="Web-development">Web development</option>
+                            <option value="Graphic-design">Graphic design</option>
+                            <option value="Video-editing">Video Editing</option>
+                            <option value="SEO">SEO (Search Engine Optimization)</option>
+                            <option value="Mobile-app-dev">App development</option>
+                        </select>
+                    </div>
+
+
+                <!-- adddress  -->
+                    <div class="form-row address-row">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address"  placeholder="Enter your address">
+                        </textarea>
+                    </div>
+
+                <!--cit -->
+                    <div class="form-row">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="City name">
+                    </div>
+
+                <!-- pincode  -->
+                    <div class="form-row">
+                        <label for="pincode">Pincode</label>
+                        <input type="number" id="pincode" name="pincode" placeholder="Enter pincode">
+                    </div>
+
+                <!-- date  -->
+                    <div class="form-row">
+                        <label for="date">Start date</label>
+                        <input type="date" id="date" name="date" value="2025-12-06" >
+                    </div>
+
+                <!-- upload -->
+                    <div class="form-row">
+                        <label for="file">Upload CV</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                </div>
+
+                <!-- button  -->
+                <div class="btn-container">
+                    <button type="submit" class="submit-btn">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
