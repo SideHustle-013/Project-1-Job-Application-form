@@ -4,12 +4,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+html, body{
+    height: 100%;
+    width: 100%;
     background-color: aliceblue;
 }
 .container{
     max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .form-box{
     max-width: 600px;
@@ -18,7 +23,7 @@ body{
     background-color: white;
     padding: 20px 20px;
     border-radius: 15px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 .heading{
     text-align: center;
@@ -85,8 +90,16 @@ button:active{
 
 
 
-@media (max-width:406px){
+@media (max-width:786px){
     .address-row{
         grid-column: 1 / span 1;
     }
+
+    .container{
+    padding: 20px;
+    height: auto;
+}
+.form-box{
+    height: auto;
+}
 };
